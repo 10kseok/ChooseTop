@@ -32,6 +32,9 @@ EENob29zZSBUb3A
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fON-Gn-fAu">
                                         <rect key="frame" x="0.0" y="80" width="374" height="30"/>
                                         <state key="normal" title="New Game"/>
+                                        <connections>
+                                            <action selector="generateRandom3Int:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tAv-L2-WGH"/>
+                                        </connections>
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MKW-pp-fcl">
                                         <rect key="frame" x="0.0" y="160" width="374" height="32"/>
@@ -44,6 +47,9 @@ EENob29zZSBUb3A
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Yy-DZ-4Yl">
                                         <rect key="frame" x="0.0" y="241" width="374" height="30"/>
                                         <state key="normal" title="확인"/>
+                                        <connections>
+                                            <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBe-9C-7Zu"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결과" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE3-ZM-egp">
                                         <rect key="frame" x="0.0" y="321" width="374" height="20.5"/>
@@ -62,6 +68,10 @@ EENob29zZSBUb3A
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e8O-YG-mpN" secondAttribute="trailing" constant="20" id="jfW-6F-ZTs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="random3IntSegmentedControl" destination="MKW-pp-fcl" id="SOM-zX-QWf"/>
+                        <outlet property="resultLabel" destination="qE3-ZM-egp" id="UNC-da-EWM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
